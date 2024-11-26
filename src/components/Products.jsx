@@ -7,11 +7,11 @@ const Products = () => {
     <div>
       <h3>All Products {products.length}</h3>
       {products.map((product) => (
-        <li key={product.productId}>
+        <div key={product.productId}>
           <Link to={`/product/${product.productId}`}>
             {product.productTitle}
           </Link>
-        </li>
+        </div>
       ))}
     </div>
   );
